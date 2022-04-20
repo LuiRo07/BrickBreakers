@@ -24,6 +24,13 @@ def main():
     player_pos = playerX, playerY = 100, 500
     player = playerImg.get_rect(topleft=player_pos)
 
+    # Ball
+    ballImg = pygame.image.load(os.path.join('assets/',
+                                             'ball.png'))
+    ballImg = pygame.transform.scale(playerImg, (60, 60))
+    ball_pos = ballX, ballY = 50, 60
+    ball = ballImg.get_rect(topleft=ball_pos)
+
     while 1:
 
         window_surf.blit(bg, (0,0))
@@ -42,6 +49,7 @@ def main():
 
 
         window_surf.blit(playerImg, player)
+        window_surf.blit(ballImg, ball)
         pygame.display.update()
 
     pygame.quit()
