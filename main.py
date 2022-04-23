@@ -137,7 +137,3 @@ while 1:
     pygame.display.update()
 
 pygame.quit()
-
-# code on standby for use
-# pygame.time.wait(5000)
-# sys.exit()
