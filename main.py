@@ -1,5 +1,3 @@
-# TODO: make a list of surfaces (bricks) to update with blits()
-
 import pygame
 import sys
 import os
