@@ -138,6 +138,8 @@ while 1:
     # ball and brick collision
     for brick in brickRecs:
         if ballRect.colliderect(brick):
+            destroy_sound = pygame.mixer.Sound("assets/brick_explosion.wav")
+            destroy_sound.play()
             ball_speed[1] = -(ball_speed[1])
             brick_index = brickRecs.index(brick)
             del brickRecs[brick_index]
