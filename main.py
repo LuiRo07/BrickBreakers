@@ -59,7 +59,7 @@ ball_size = (50, 50)
 ballSurf = create_imgSurf('ball.png', ball_size)
 ball_start = ballX, ballY = (0, 350)
 ballRect = ballSurf.get_rect(topleft=ball_start)
-ball_speeds = {"easy": [2, 2], "medium": [3, 3], "hard": [5, 5]}
+ball_speeds = {"easy": [3, 3], "medium": [4, 4], "hard": [5, 5]}
 ball_speed = ball_speeds["easy"]
 
 # bricks
